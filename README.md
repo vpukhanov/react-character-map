@@ -67,18 +67,3 @@ The second parameter `el` is the element that has been selected, this is an anch
 ```html
 <button data-hex="&#00D8;" data-entity="&Oslash;" data-char="Ø" data-title="LATIN CAPITAL LETTER O WITH STROKE">Ø</button>
 ```
-
-
-### Styling
-The package comes with very basic styling, it is recommended that you style it to match your app.
-
-
-![](http://c.dayjo.me/0I2H0s0M0s2O/Screen%20Recording%202018-01-26%20at%2002.51%20pm.gif)
-
-### Thanks
-Thank you to the contributors for actively improving and making suggestions to the repo.
-
-https://github.com/Dayjo/react-character-map/graphs/contributors
-
-* @adamsilverstein
-* @jeffpaul
