@@ -1,18 +1,13 @@
-# React Character Map
+# @vpukhanov/react-character-map
 
-Include a character map in your app using our React Character Map.
+Include a character map in your app using our React Character Map. It provides a simple interface for users to select a character from a list of categorised characters.
 
-It provides a simple interface for users to select a character from a list of categorised characters.
+Based on the original react-character map by Joel Day.
 
 ## Installation
 
 ```
-npm install react-character-map
-```
-
-or
-```
-yarn add react-character-map
+npm install @vpukhanov/react-character-map
 ```
 
 
