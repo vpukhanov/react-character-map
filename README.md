@@ -15,7 +15,7 @@ npm install @vpukhanov/react-character-map
 
 ```js
 // Import the module into your react app
-import {CharacterMap} from 'react-character-map';
+import {CharacterMap} from '@vpukhanov/react-character-map';
 ```
 
 ```js
