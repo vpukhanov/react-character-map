@@ -1,6 +1,6 @@
 {
   "name": "@vpukhanov/react-character-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable character selector for your React applications",
   "main": "dist/index.js",
   "repository": "git@github.com:vpukhanov/react-character-map.git",
