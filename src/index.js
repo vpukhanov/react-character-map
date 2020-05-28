@@ -1,2 +1,2 @@
-import CharacterMap from './component/CharacterMap';
+import CharacterMap from "./component/CharacterMap";
 export { CharacterMap };

@@ -31,6 +31,8 @@ import {CharacterMap} from '@vpukhanov/react-character-map';
 
 * `autofocus` (boolean): When `autofocus` is true, the component's search input will be focused on mount. Default: `true`.
 
+* `showFilter` (boolean): When `showFilter` is true, the component's search input will be displayed. Default: `true`.
+
 * `characterData` is an optional property that overrides the default character map. `characterData` should be provided in the form:
 ```js
 {
@@ -42,6 +44,7 @@ import {CharacterMap} from '@vpukhanov/react-character-map';
     ]
 }
 ```
+
 * `onSelect` callback: This is fired when the user clicks on a character, and has two parameters;
 
 ```js
