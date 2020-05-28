@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.10.0",
