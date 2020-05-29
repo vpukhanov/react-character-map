@@ -13,7 +13,7 @@ const CharMapSelector: React.FC<CharMapSelectorProps> = ({ onSelect }) => {
   return (
     <div className="charMap--selector">
       {characterData[selectedCategory].map((characterInfo) => (
-        <button className="charMap--selector-button" onClick={() => onSelect(characterInfo)}>
+        <button key={characterInfo.char} className="charMap--selector-button" onClick={() => onSelect(characterInfo)}>
           {characterInfo.char}
         </button>
       ))}

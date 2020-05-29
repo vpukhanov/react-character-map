@@ -46,16 +46,6 @@
       "name": "SECTION SIGN",
       "char": "§"
     },
-    {
-      "hex": "&#275D;",
-      "name": "HEAVY DOUBLE TURNED COMMA QUOTATION MARK ORNAMENT",
-      "char": "❝"
-    },
-    {
-      "hex": "&#275E;",
-      "name": "HEAVY DOUBLE COMMA QUOTATION MARK ORNAMENT",
-      "char": "❞"
-    },
     { "entity": "&infin;", "hex": "&#221E;", "name": "INFINITY", "char": "∞" },
     {
       "entity": "&oslash;",
@@ -149,10 +139,7 @@
       "name": "REVERSED ROTATED FLORAL HEART BULLET",
       "char": "☙"
     },
-    { "hex": "&#2668;", "name": "HOT SPRINGS EMOJI", "char": "♨" },
     { "hex": "&#2601;", "name": "CLOUD", "char": "☁" },
-    { "hex": "&#2696;", "name": "SCALES EMOJI", "char": "⚖" },
-
     { "entity": "&uml;", "hex": "&#00A8;", "name": "DIAERESIS", "char": "¨" },
     { "entity": "&not;", "hex": "&#00AC;", "name": "NOT SIGN", "char": "¬" },
     { "entity": "&macr;", "hex": "&#00AF;", "name": "MACRON", "char": "¯" },
@@ -161,12 +148,6 @@
       "hex": "&#00B4;",
       "name": "ACUTE ACCENT",
       "char": "´"
-    },
-    {
-      "entity": "&micro;",
-      "hex": "&#00B5;",
-      "name": "MICRO SIGN",
-      "char": "µ"
     },
     {
       "entity": "&middot;",
@@ -534,7 +515,6 @@
     { "hex": "&#2B54;", "name": "WHITE RIGHT-POINTING PENTAGON", "char": "⭔" },
 
     { "hex": "&#2600;", "name": "BLACK SUN WITH RAYS", "char": "☀" },
-    { "hex": "&#2601;", "name": "CLOUD", "char": "☁" },
     { "hex": "&#2602;", "name": "UMBRELLA", "char": "☂" },
     { "hex": "&#2603;", "name": "SNOWMAN", "char": "☃" },
     { "hex": "&#2604;", "name": "COMET", "char": "☄" },
@@ -558,11 +538,6 @@
     { "hex": "&#2616;", "name": "WHITE SHOGI PIECE", "char": "☖" },
     { "hex": "&#2617;", "name": "BLACK SHOGI PIECE", "char": "☗" },
     { "hex": "&#2618;", "name": "SHAMROCK", "char": "☘" },
-    {
-      "hex": "&#2619;",
-      "name": "REVERSED ROTATED FLORAL HEART BULLET",
-      "char": "☙"
-    },
     { "hex": "&#261A;", "name": "BLACK LEFT POINTING INDEX", "char": "☚" },
     { "hex": "&#261B;", "name": "BLACK RIGHT POINTING INDEX", "char": "☛" },
     { "hex": "&#261C;", "name": "WHITE LEFT POINTING INDEX", "char": "☜" },
@@ -749,8 +724,6 @@
     { "hex": "&#268D;", "name": "DIGRAM FOR LESSER YIN", "char": "⚍" },
     { "hex": "&#268E;", "name": "DIGRAM FOR LESSER YANG", "char": "⚎" },
     { "hex": "&#268F;", "name": "DIGRAM FOR GREATER YIN", "char": "⚏" },
-    { "hex": "&#2690;", "name": "WHITE FLAG", "char": "⚐" },
-    { "hex": "&#2691;", "name": "BLACK FLAG", "char": "⚑" },
     { "hex": "&#2692;", "name": "HAMMER AND PICK", "char": "⚒" },
     { "hex": "&#2693;", "name": "ANCHOR", "char": "⚓" },
     { "hex": "&#2694;", "name": "CROSSED SWORDS", "char": "⚔" },
@@ -977,7 +950,6 @@
       "name": "ROTATED HEAVY BLACK HEART BULLET",
       "char": "❥"
     },
-    { "hex": "&#2766;", "name": "FLORAL HEART", "char": "❦" },
     { "hex": "&#2767;", "name": "ROTATED FLORAL HEART BULLET", "char": "❧" },
     {
       "hex": "&#2768;",

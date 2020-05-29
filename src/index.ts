@@ -1,7 +1,7 @@
+import CharMapCategoriesList from "./components/CharMapCategoriesList/CharMapCategoriesList";
+import CharMapContextProvider from "./components/CharMapContextProvider/CharMapContextProvider";
 import CharMapSelector from "./components/CharMapSelector/CharMapSelector";
-import CharMapContext from "./context/CharMapContext";
 
 export { CharMapSelector };
-
-const CharMapContextProvider = CharMapContext.Provider;
+export { CharMapCategoriesList };
 export { CharMapContextProvider };

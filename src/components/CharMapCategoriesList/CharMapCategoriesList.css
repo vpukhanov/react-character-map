@@ -1,0 +1,23 @@
+.charMap--categoriesList {
+    display: flex;
+    font-size: 16px;
+}
+
+.charMap--categoriesList-button {
+    font-size: inherit;
+    background-color: white;
+    border: none;
+}
+
+.charMap--categoriesList-button:focus,
+.charMap--categoriesList-button:hover,
+.charMap--categoriesList-button:active {
+    background-color: #41a6ac;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.charMap--categoriesList-button-selected {
+    background-color: #318085;
+    color: #ffffff;
+}
