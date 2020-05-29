@@ -7,6 +7,7 @@ export interface CharMapContextContents {
   selectedCategory: string;
 
   setSelectedCategory(category: string): void;
+  getDisplayCategoryName(category: string): string;
 }
 
 const CharMapContext = createContext<CharMapContextContents>({
@@ -17,6 +18,9 @@ const CharMapContext = createContext<CharMapContextContents>({
     throw Error(
       "CharMapContext does not contain an implementation of setSelectedCategory. Make sure to wrap CharMap components in a CharMapContextProvider."
     );
+  },
+  getDisplayCategoryName(category: string) {
+    return category;
   },
 });
 

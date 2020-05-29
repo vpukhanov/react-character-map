@@ -9,9 +9,12 @@ export interface CharMapCategoriesListProps {
 }
 
 const CharMapCategoriesList: React.FC<CharMapCategoriesListProps> = (props) => {
-  const { characterData, selectedCategory, setSelectedCategory } = useContext(
-    CharMapContext
-  );
+  const {
+    characterData,
+    selectedCategory,
+    setSelectedCategory,
+    getDisplayCategoryName,
+  } = useContext(CharMapContext);
 
   const categories = useMemo(() => Object.keys(characterData), [characterData]);
   const buttonClassName =
@@ -29,7 +32,7 @@ const CharMapCategoriesList: React.FC<CharMapCategoriesListProps> = (props) => {
           })}
           onClick={() => setSelectedCategory(category)}
         >
-          {category}
+          {getDisplayCategoryName(category)}
         </button>
       ))}
     </div>

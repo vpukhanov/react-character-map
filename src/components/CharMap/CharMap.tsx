@@ -10,7 +10,10 @@ import CharMapSelector, {
 export type CharMapProps = CharMapContextProviderProps & CharMapSelectorProps;
 
 const CharMap: React.FC<CharMapProps> = (props) => (
-  <CharMapContextProvider characterData={props.characterData}>
+  <CharMapContextProvider
+    characterData={props.characterData}
+    categoryNames={props.categoryNames}
+  >
     <CharMapCategoriesList />
     <CharMapSelector onSelect={props.onSelect} />
   </CharMapContextProvider>
