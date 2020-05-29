@@ -4,3 +4,4 @@ webpack.config.js
 tsconfig.json
 .github
 CNAME
+_config.yml
