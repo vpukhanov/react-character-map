@@ -3,16 +3,25 @@ import CharMapContext from "../../context/CharMapContext";
 import cn from "classnames";
 import "./CharMapCategoriesList.css";
 
-const CharMapCategoriesList: React.FC = () => {
+export interface CharMapCategoriesListProps {
+    buttonClassName?: string;
+    activeButtonClassName?: string;
+}
+
+const CharMapCategoriesList: React.FC<CharMapCategoriesListProps> = (props) => {
   const { characterData, selectedCategory, setSelectedCategory } = useContext(CharMapContext);
+
   const categories = useMemo(() => Object.keys(characterData), [characterData]);
+  const buttonClassName = props.buttonClassName ?? "charMap--categoriesList-button";
+  const activeButtonClassName = props.activeButtonClassName ?? "charMap--categoriesList-button-selected";
+
   return (
     <div className="charMap--categoriesList">
       {categories.map((category) => (
         <button
           key={category}
-          className={cn("charMap--categoriesList-button", {
-            "charMap--categoriesList-button-selected":
+          className={cn(buttonClassName, {
+            [activeButtonClassName]:
               category === selectedCategory,
           })}
           onClick={() => setSelectedCategory(category)}

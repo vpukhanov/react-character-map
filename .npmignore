@@ -2,3 +2,4 @@ src
 .gitignore
 webpack.config.js
 tsconfig.json
+.github
