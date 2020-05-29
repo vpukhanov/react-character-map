@@ -8,12 +8,16 @@ export interface CharMapSelectorProps {
 }
 
 const CharMapSelector: React.FC<CharMapSelectorProps> = ({ onSelect }) => {
-    debugger;
-   const { characterData, selectedCategory } = useContext(CharMapContext);
+  debugger;
+  const { characterData, selectedCategory } = useContext(CharMapContext);
   return (
     <div className="charMap--selector">
       {characterData[selectedCategory].map((characterInfo) => (
-        <button key={characterInfo.char} className="charMap--selector-button" onClick={() => onSelect(characterInfo)}>
+        <button
+          key={characterInfo.char}
+          className="charMap--selector-button"
+          onClick={() => onSelect(characterInfo)}
+        >
           {characterInfo.char}
         </button>
       ))}
