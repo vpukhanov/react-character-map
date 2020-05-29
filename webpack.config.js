@@ -6,13 +6,13 @@ module.exports = {
     output: {
       filename: 'index.js',
       path: path.resolve(__dirname, 'dist'),
-      libraryTarget: 'commonjs2'
+      libraryTarget: 'umd'
     },
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
-                exclude: /(node_modules)/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -25,5 +25,16 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.json', '.css']
+    },
+    externals: {
+        react: {
+            commonjs: "react",
+            commonjs2: "react",
+            amd: "React",
+            root: "React"
+        }
     }
   };
