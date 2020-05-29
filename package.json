@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Reusable character selector for your React applications",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:vpukhanov/react-character-map.git",
   "author": "Vyacheslav Pukhanov",
   "license": "MIT",
@@ -10,7 +11,7 @@
     "react": "^16.0.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && tsc",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "style-loader": "^1.2.1",
+    "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
