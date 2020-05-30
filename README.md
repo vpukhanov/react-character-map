@@ -1,7 +1,9 @@
-# @vpukhanov/react-character-map
+# @vpukhanov/react-character-map [![Storybook](https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg)](https://react-character-map.now.sh/)
 
 `@vpukhanov/react-character-map` is an easy to include character map selector component built with React. It provides a simple user interface to select a character from a categorised list. It is based on the original `react-character-map` by Joel Day, but rebuilt from the ground up using TypeScript
 and functional components.
+
+[View live Storybook example](https://react-character-map.now.sh/)
 
 <p align="center">
   <a href="https://i.imgur.com/nmtkZ73.png">
@@ -11,6 +13,7 @@ and functional components.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 ## Table of Contents
 
 - [Installation](#installation)
