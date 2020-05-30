@@ -19,8 +19,9 @@ const CharMapContextProvider: React.FC<CharMapContextProviderProps> = ({
 }) => {
   const parentContext = useContext(CharMapContext);
 
+  const actualCharacterData = characterData || parentContext.characterData;
   const [selectedCategory, setSelectedCategory] = useState(
-    defaultSelectedCategory || parentContext.selectedCategory
+    () => defaultSelectedCategory || Object.keys(actualCharacterData)[0]
   );
   const getDisplayCategoryName = useCallback(
     (category: string) =>
@@ -31,7 +32,7 @@ const CharMapContextProvider: React.FC<CharMapContextProviderProps> = ({
 
   const contextContents: CharMapContextContents = useMemo(
     () => ({
-      characterData: characterData ?? parentContext.characterData,
+      characterData: actualCharacterData,
       selectedCategory,
       setSelectedCategory,
       getDisplayCategoryName,

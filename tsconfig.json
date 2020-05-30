@@ -14,7 +14,8 @@
     "declaration": true,
     "declarationDir": "./dist",
     "emitDeclarationOnly": true,
-    "lib": ["es2015"]
+    "lib": ["es2015", "DOM"]
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["*.stories.tsx"]
 }

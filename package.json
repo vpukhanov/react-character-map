@@ -12,23 +12,32 @@
   },
   "scripts": {
     "build": "rm -rf dist/ && tsc && webpack",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.35",
     "babel-loader": "^8.1.0",
     "classnames": "^2.2.6",
     "css-loader": "^3.5.3",
+    "fork-ts-checker-webpack-plugin": "^4.1.6",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "prop-types": "^15.7.2",
+    "react": "^16.13.1",
     "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
@@ -37,5 +46,6 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  }
+  },
+  "dependencies": {}
 }
