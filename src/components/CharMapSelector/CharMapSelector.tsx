@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useContext } from "react";
 import CharMapContext from "../../context/CharMapContext";
 import { CharacterInfo } from "../../types/CharacterInfo";
@@ -8,7 +9,6 @@ export interface CharMapSelectorProps {
 }
 
 const CharMapSelector: React.FC<CharMapSelectorProps> = ({ onSelect }) => {
-  debugger;
   const { characterData, selectedCategory } = useContext(CharMapContext);
   return (
     <div className="charMap--selector">
@@ -23,6 +23,10 @@ const CharMapSelector: React.FC<CharMapSelectorProps> = ({ onSelect }) => {
       ))}
     </div>
   );
+};
+
+CharMapSelector.propTypes = {
+  onSelect: PropTypes.func.isRequired,
 };
 
 export default CharMapSelector;

@@ -13,10 +13,16 @@ const CharMap: React.FC<CharMapProps> = (props) => (
   <CharMapContextProvider
     characterData={props.characterData}
     categoryNames={props.categoryNames}
+    defaultSelectedCategory={props.defaultSelectedCategory}
   >
     <CharMapCategoriesList />
     <CharMapSelector onSelect={props.onSelect} />
   </CharMapContextProvider>
 );
+
+CharMap.propTypes = {
+  ...CharMapContextProvider.propTypes,
+  ...CharMapSelector.propTypes,
+};
 
 export default CharMap;

@@ -1,4 +1,5 @@
 import cn from "classnames";
+import PropTypes from "prop-types";
 import React, { useContext, useMemo } from "react";
 import CharMapContext from "../../context/CharMapContext";
 import "./CharMapCategoriesList.css";
@@ -37,6 +38,11 @@ const CharMapCategoriesList: React.FC<CharMapCategoriesListProps> = (props) => {
       ))}
     </div>
   );
+};
+
+CharMapCategoriesList.propTypes = {
+  buttonClassName: PropTypes.string,
+  activeButtonClassName: PropTypes.string,
 };
 
 export default CharMapCategoriesList;
