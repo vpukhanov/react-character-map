@@ -3,4 +3,9 @@ src
 webpack.config.js
 tsconfig.json
 .github
+<<<<<<< HEAD
 .storybook
+=======
+CNAME
+_config.yml
+>>>>>>> 0163d3b6c7eba0568d251c72265cdb85b0571e24
