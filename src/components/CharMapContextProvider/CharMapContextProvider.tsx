@@ -5,7 +5,7 @@ import CharMapContext, {
 } from "../../context/CharMapContext";
 import { CharMapData, CharMapDataShape } from "../../types/CharacterInfo";
 
-export interface CharMapContextProviderProps {
+export interface CharMapContextProviderProps extends React.PropsWithChildren {
   categoryNames?: Record<string, string>;
   characterData?: CharMapData;
   defaultSelectedCategory?: string;
